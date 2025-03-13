@@ -1,8 +1,20 @@
 ---
 title: My Paper
 authors:
-  - name: Norah Jones
-    affiliation: The University
+  - name: Brittany Bobb 
+    affiliation: Colorado State 
+    roles: writing
+    corresponding: true
+  - name: Louisa Beckett
+    affiliation: Colorado State 
+    roles: writing
+    corresponding: true
+  - name: Tayler Kordiak
+    affiliation: Colorado State 
+    roles: writing
+    corresponding: true
+  - name: Austin Sharrah
+    affiliation: Colorado State 
     roles: writing
     corresponding: true
 bibliography: references.bib
