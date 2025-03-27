@@ -1,5 +1,5 @@
 ---
-title: My Paper
+title: Lab5
 authors:
   - name: Brittany Bobb 
     affiliation: Colorado State 
