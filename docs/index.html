@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lab5</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+<meta name="citation_title" content="Lab5">
+<meta name="citation_author" content="Brittany Bobb">
+<meta name="citation_author" content="Louisa Beckett">
+<meta name="citation_author" content="Tayler Kordiak">
+<meta name="citation_author" content="Austin Sharrah">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=The relationship between age and the manifestations of and mortality associated with severe malaria;,citation_author=Arjen M Dondorp;,citation_author=Sue J Lee;,citation_author=Md Abul Faiz;,citation_author=Saroj Mishra;,citation_author=Ric Price;,citation_author=Emiliana Tjitra;,citation_author=Marlar Than;,citation_author=Ye Htut;,citation_author=Sanjib Mohanty;,citation_author=Emran Bin Yunus;,citation_author=others;,citation_publication_date=2008;,citation_cover_date=2008;,citation_year=2008;,citation_fulltext_html_url=https://academic.oup.com/cid/article-abstract/47/2/151/356729;,citation_issue=2;,citation_volume=47;,citation_journal_title=Clinical Infectious Diseases;,citation_publisher=The University of Chicago Press;">
+<meta name="citation_reference" content="citation_title=Malaria surveillance—united states, 2017;,citation_author=Kimberly E Mace;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://www.cdc.gov/mmwr/volumes/70/ss/ss7002a1.htm;,citation_volume=70;,citation_journal_title=MMWR. Surveillance Summaries;">
+<meta name="citation_reference" content="citation_title=Fine particulate air pollution and hospital admission for cardiovascular and respiratory diseases;,citation_author=Francesca Dominici;,citation_author=Roger D Peng;,citation_author=Michelle L Bell;,citation_author=Luu Pham;,citation_author=Aidan McDermott;,citation_author=Scott L Zeger;,citation_author=Jonathan M Samet;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_fulltext_html_url=https://jamanetwork.com/journals/jama/fullarticle/202503#google_vignette;,citation_issue=10;,citation_volume=295;,citation_journal_title=Jama;,citation_publisher=American Medical Association;">
+<meta name="citation_reference" content="citation_title=Health effects of fine particulate air pollution: Lines that connect;,citation_author=C Arden Pope III;,citation_author=Douglas W Dockery;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_fulltext_html_url=https://doi.org/10.1080/10473289.2006.10464485;,citation_issue=6;,citation_volume=56;,citation_journal_title=Journal of the air &amp;amp;amp; waste management association;,citation_publisher=Taylor &amp;amp; Francis;">
+<meta name="citation_reference" content="citation_title=Human development report 2020-the next frontier: Human development and the anthropocene;,citation_author=Pedro Conceição;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4418010;,citation_journal_title=United Nations Development Programme: Human Development Report;">
+<meta name="citation_reference" content="citation_title=The world’s water volume 7: The biennial report on freshwater resources;,citation_author=Peter H Gleick;,citation_author=Lucy Allen;,citation_author=Juliet Christian-Smith;,citation_author=Michael J Cohen;,citation_author=Heather Cooley;,citation_author=Matthew Heberger;,citation_author=Jason Morrison;,citation_author=Meena Palaniappan;,citation_author=Paul Schulte;,citation_publication_date=2012;,citation_cover_date=2012;,citation_year=2012;,citation_fulltext_html_url=https://books.google.com/books?hl=en&amp;amp;amp;lr=&amp;id=5Y8tmugb-EoC&amp;oi=fnd&amp;pg=PR5&amp;dq=The+World%27s+Water+Volume+9:+The+Biennial+Report+on+Freshwater+Resources.&amp;ots=o5MySaHY4I&amp;sig=U08q6tYo85p_XvRY0FYTH0GaM1w#v=onepage&amp;q=The%20World&amp;#039;s%20Water%20Volume%209%3A%20The%20Biennial%20Report%20on%20Freshwater%20Resources.&amp;f=false;">
+<meta name="citation_reference" content="citation_title=The quest for environmental justice: Human rights and the politics of pollution;,citation_author=Robert Doyle Bullard;,citation_author=others;,citation_publication_date=2005;,citation_cover_date=2005;,citation_year=2005;,citation_fulltext_html_url=https://aibd.psc.edu/aekfehsho/15-miss-dannie-considine-1/in7jqx9VZp2G-the-quest-for-environmental-justice-human-rights-9781578051205.pdf;,citation_volume=19;">
+<meta name="citation_reference" content="citation_title=Environmental justice: Human health and environmental inequalities;,citation_author=Robert J Brulle;,citation_author=David N Pellow;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_fulltext_html_url=https://www.annualreviews.org/content/journals/10.1146/annurev.publhealth.27.021405.102124;,citation_issue=1;,citation_volume=27;,citation_journal_title=Annual review of public health;,citation_publisher=Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA;">
+<meta name="citation_reference" content="citation_title=Widespread amphibian extinctions from epidemic disease driven by global warming;,citation_author=J Alan Pounds;,citation_author=Martı́n R Bustamante;,citation_author=Luis A Coloma;,citation_author=Jamie A Consuegra;,citation_author=Michael PL Fogden;,citation_author=Pru N Foster;,citation_author=Enrique La Marca;,citation_author=Karen L Masters;,citation_author=Andrés Merino-Viteri;,citation_author=Robert Puschendorf;,citation_author=others;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_fulltext_html_url=https://doi.org/10.1038/nature04246;,citation_issue=7073;,citation_volume=439;,citation_journal_title=Nature;,citation_publisher=Nature Publishing Group UK London;">
+<meta name="citation_reference" content="citation_title=Climate change and amphibian declines: Is there a link?;,citation_author=Cynthia Carey;,citation_author=Michael A Alexander;,citation_publication_date=2003;,citation_cover_date=2003;,citation_year=2003;,citation_fulltext_html_url=https://doi.org/10.1046/j.1472-4642.2003.00011.x;,citation_issue=2;,citation_volume=9;,citation_journal_title=Diversity and distributions;,citation_publisher=Wiley Online Library;">
+<meta name="citation_reference" content="citation_title=Global warming and recurrent mass bleaching of corals;,citation_author=Terry P Hughes;,citation_author=James T Kerry;,citation_author=Mariana Álvarez-Noriega;,citation_author=Jorge G Álvarez-Romero;,citation_author=Kristen D Anderson;,citation_author=Andrew H Baird;,citation_author=Russell C Babcock;,citation_author=Maria Beger;,citation_author=David R Bellwood;,citation_author=Ray Berkelmans;,citation_author=others;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_fulltext_html_url=https://doi.org/10.1038/nature21707;,citation_issue=7645;,citation_volume=543;,citation_journal_title=Nature;,citation_publisher=Nature Publishing Group UK London;">
+<meta name="citation_reference" content="citation_title=Effects of climate change/global warming on coral reefs: Adaptation/exaptation in corals, evolution in zooxanthellae, and biogeographic shifts;,citation_author=Paul W Sammarco;,citation_author=Kevin B Strychar;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_fulltext_html_url=https://doi.org/10.1080/15555270902905377;,citation_issue=1;,citation_volume=4;,citation_journal_title=Environmental Bioindicators;,citation_publisher=Taylor &amp;amp;amp; Francis;">
+<meta name="citation_reference" content="citation_title=Temperature-dependent development of the mountain pine beetle (coleoptera: Scolytidae) and simulation of its phenology;,citation_author=Barbara J Bentz;,citation_author=Jesse A Logan;,citation_author=Gene D Amman;,citation_publication_date=1991;,citation_cover_date=1991;,citation_year=1991;,citation_fulltext_html_url=https://doi.org/10.1139/X09-147;,citation_issue=5;,citation_volume=123;,citation_journal_title=The Canadian Entomologist;,citation_publisher=Cambridge University Press;">
+<meta name="citation_reference" content="citation_title=Forest health implications of mountain pine beetle outbreaks;,citation_author=Michael S Schaedel;,citation_author=Andrew J Larson;,citation_author=David LR Affleck;,citation_author=R Travis Belote;,citation_author=John M Goodburn;,citation_author=Deborah S Page-Dumroese;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_fulltext_html_url=https://doi.org/10.1016/j.foreco.2016.12.018;,citation_volume=389;,citation_journal_title=Forest ecology and management;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Zebra mussel invasions and their management;,citation_author=A. J. Benson;,citation_author=others;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://doi.org/10.1016/j.jism.2020.04.002;,citation_issue=2;,citation_doi=10.1016/j.jism.2020.04.002;,citation_volume=12;,citation_journal_title=Journal of Invasive Species Management;">
+<meta name="citation_reference" content="citation_title=Effects of zebra mussels on freshwater mussel populations in north america;,citation_author=W. R. Haag;,citation_author=M. L. Warren;,citation_publication_date=2008;,citation_cover_date=2008;,citation_year=2008;,citation_fulltext_html_url=https://doi.org/10.1007/s10750-008-9373-x;,citation_issue=1;,citation_doi=10.1007/s10750-008-9373-x;,citation_volume=606;,citation_journal_title=Hydrobiologia;">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Lab5</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Authors</div>
+          <div class="quarto-title-meta-heading">Affiliation</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Brittany Bobb </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Colorado State
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Louisa Beckett </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Colorado State
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Tayler Kordiak </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Colorado State
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Austin Sharrah </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Colorado State
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></p></div></div></div>
+    </div>
+
+
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<p>Final Project Document:</p>
+<p><strong>Tayler</strong></p>
+<p><em>Proposal 1</em></p>
+<p>Title: Malaria Cases by Age in the United States Between 2010-2020</p>
+<p>Justification: Quantitative analysis of malaria cases by age is critical to look into further because there isn’t enough research to see if age is an independent factor that contributes to higher cases <span class="citation" data-cites="dondorp2008relationship">(<a href="#ref-dondorp2008relationship" role="doc-biblioref">Dondorp et al. 2008</a>)</span>. However, the risks and symptoms are worse in older individuals. With a better understanding of the distribution of age and cases of malaria in the United States, we can prioritize protecting those who need it most. Malaria has been seen to be slowly increasing in the United States since the 1970s and hit its peak in 2016 with 2,078 confirmed cases and was passed again in 2017 <span class="citation" data-cites="mace2021malaria">(<a href="#ref-mace2021malaria" role="doc-biblioref">Mace 2021</a>)</span>. In this analysis, we would be able to determine if the distribution of age and malaria cases is correlated and if mosquitos prefer to infect those of a certain age.</p>
+<p>Research objective/hypothesis: Adults over the age of 50 have a higher incidence rate of malaria in the United States compared to individuals between the ages of 10-18.</p>
+<p>Proposed Methods: To test this hypothesis we will conduct an observational study using a chi-squared test and descriptive statistics to assess the significant differences across age groups and incident rates. The key variables will be age group, malaria cases, and geographic distribution at a state level using two sets of data, the CDC Malaria Data and the Data Commons that provide in-depth data on malaria cases within a 10-year timeframe. As well as possibly using a logistic regression model to adjust for confounding variables.</p>
+<p>Expected Outcomes: I think that the hypothesis will prove to be true because older people are more prone to mosquito incidents, and this is important to determine because it will let us know that they need to be monitored more and protect themselves more due to them being more vulnerable.</p>
+<p><em>Proposal 2</em></p>
+<p>Title: Air Pollution and its Impact on Hospitalization</p>
+<p>Justification: When looking at high levels of air pollution in highly populated/congested areas we often see more hospitalization of people within these regions because they are ingesting particles that can’t pass through their alveoli within the lungs. There have been many cases that have linked severe respiratory and cardiovascular effects, which makes public health a major concern. It is shown in one study that the amount of prolonged exposure to high particulate levels causes increased hospitalizations due to asthma, COPD, and pneumonia <span class="citation" data-cites="dominici2006fine">(<a href="#ref-dominici2006fine" role="doc-biblioref">Dominici et al. 2006</a>)</span>. The elderly, children and individuals with preexisting respiratory issues are more likely to experience hospitalization in Urban areas because of high pollution <span class="citation" data-cites="pope2006health">(<a href="#ref-pope2006health" role="doc-biblioref">Pope III and Dockery 2006</a>)</span>. This analysis will be able to inform policy decisions like implementing stricter air quality regulations.</p>
+<p>Research objectives/hypothesis: Higher levels of particulate matter in the air in major U.S. urban areas are significantly associated with an increase in respiratory-related hospital admissions.</p>
+<p>Proposed Methods: The analysis will analyze the relationship between particulate matter in the air and respiratory-related admissions using two datasets, the air pollution data from the EPA air quality system and the HCUP-NIS which shows the hospitalization records and it also will determine if the cases were asthma, COPD, or pneumonia. We will cover between 2013-2023 across major urban areas in the United States. Key variables will be air particulate matter levels, number of respiratory admissions per day, temperature, and humidity to account for confounding variables. Quantitative analysis will include ANOVA and t-tests to compare hospital admissions and air particulate matter.</p>
+<p>Expected Outcomes: We should see a positive correlation between increased hospital admissions and a higher amount of air particulate matter in urban areas within the untied States.</p>
+<p><strong>Brittany</strong></p>
+<p><em>Proposal 1</em></p>
+<p>Title: “Navigating the Water Crisis: How Population Growth Exacerbates Water Scarcity and Affects Global Well-being”</p>
+<p>Justification: This is an analysis that could provide valuable insights into the interconnectedness of population growth, water supply, and broader socioeconomic and environmental outcomes. It would identify the trends globally regarding which countries’ water supplies are being affected the most by the negative impacts of overpopulation. This analysis could also then be used in comparison with other metrics such as GDP to further explore what the quality of life may be for those living within these areas heavily affected by the global water crisis. Additionally, by discovering what areas are most affected, further analysis could be performed to decipher what areas will most likely be affected by factors such as food scarcity linked to water scarcity caused by the negative effects of climate change. Water scarcity is increasingly becoming a critical issue, and understanding how population growth affects water availability is key to addressing potential future challenges, especially in light of climate change and increasing global demand.</p>
+<p>Research Objective/ Hypothesis: The aim is to examine the relationship between population growth and the negative impact it has on the global water supply, and to explore how these effects are compounded by other factors such as GDP and climate change.How does population growth impact global water supply, and what are the subsequent effects on food security, economic development, and quality of life in water-stressed regions? As the global population grows, areas experiencing rapid population increases will face heightened water scarcity, leading to negative impacts on food security, economic growth, and the quality of life, especially in developing regions. Furthermore, the effects of climate change will exacerbate these challenges, creating a feedback loop that makes water-stressed regions more vulnerable to socio-economic instability <span class="citation" data-cites="conceiccao2020human">(<a href="#ref-conceiccao2020human" role="doc-biblioref">Conceição 2020</a>)</span>.</p>
+<p>Proposed Methods: The methodology will include data analysis, case studies, and modeling to understand the relationships between population growth, water supply, and their impacts on food security and quality of life. Global population data would be sourced from the UN database https://data.un.org/. Water supply and usage data would be gathered from either WRI or FAO. GDP and quality of life indicators would be sourced from UNDP and WHO. Finally, climate change impact data would be gathered from IPCC. A linear regression model may be the best statistical analysis suited for this type of analysis and could provide a needed visualization of the data</p>
+<p>Expected Outcomes: The expected outcomes of this research will provide valuable insights into the relationship between population growth, water scarcity, and the socio-economic outcomes in water-stressed regions. The findings will help in identifying regions most at risk and in proposing effective solutions to mitigate the impacts of water scarcity, ensuring a more sustainable future for both people and the planet.</p>
+<p>Citations: <span class="citation" data-cites="conceiccao2020human">(<a href="#ref-conceiccao2020human" role="doc-biblioref">Conceição 2020</a>)</span> <span class="citation" data-cites="gleick2012world">(<a href="#ref-gleick2012world" role="doc-biblioref">Gleick et al. 2012</a>)</span></p>
+<p><em>Proposal 2</em></p>
+<p>Title: Assessing the Impact of Pollution on Communities: Analyzing EPA Toxics Release Inventory Data and GDP Disparities in the United States</p>
+<p>Justification: This research is justified because it would identify the correlation between environmental injustice and economic inequality. This would be done by linking areas of pollution, pollutant levels, and economic factors including GDP. This analysis could provide a better understanding as to what future legislation may be necessary to prevent further injustice.</p>
+<p>Research Question/ Hypothesis: How does the level of pollution, as indicated by the EPA Toxics Release Inventory (TRI) data, correlate with the economic status (measured by GDP) of communities across the United States, and which types of communities are most affected by high levels of pollution? Communities with lower GDP and socio-economic status in the United States are more likely to be adversely affected by higher levels of pollution, as indicated by the EPA Toxics Release Inventory data. This correlation could highlight environmental justice concerns, where economically disadvantaged and marginalized communities bear a disproportionate share of pollution-related health risks and environmental burdens.</p>
+<p>Proposed Methods: The methodology will include data analysis, case studies, and modeling to understand the relationships between GDP and data sourced from the EPA. The data collection would include the EPA Toxics Release Inventory and Economic Data sourced from the US Census Bureau.</p>
+<p>Expected Outcomes: By utilizing EPA TRI data alongside GDP data, this analysis will uncover the links between pollution and economic status, shedding light on which communities face the greatest environmental burdens. The results will inform environmental justice discussions, helping to guide targeted policies and interventions that protect vulnerable communities from the adverse effects of pollution. I do suspect there will be a correlation between GDP and the data explored from the EPA.</p>
+<p>Citations: <span class="citation" data-cites="bullard2005quest">(<a href="#ref-bullard2005quest" role="doc-biblioref">Bullard et al. 2005</a>)</span> <span class="citation" data-cites="brulle2006environmental">(<a href="#ref-brulle2006environmental" role="doc-biblioref">Brulle and Pellow 2006</a>)</span></p>
+<p><strong>Louisa</strong></p>
+<p><em>Proposal 1</em></p>
+<p>Title: Impact of Global Warming on Amphibian Vulnerability: A Study of Ecological Shifts and Conservation Priorities</p>
+<p>Justification: Amphibians great indicator species and are highly sensitive to environmental changes, particularly those driven by climate change. Due to their permeable skin and reliance on both aquatic and terrestrial environments, amphibians are increasingly vulnerable to warming temperatures. Research suggests that global warming is causing significant shifts in the distribution and behavior of amphibian species, increasing their susceptibility to disease and altering their breeding patterns <span class="citation" data-cites="alan2006widespread">(<a href="#ref-alan2006widespread" role="doc-biblioref">Alan Pounds et al. 2006</a>)</span>. The loss of suitable habitats, along with rising temperatures, can disrupt amphibian populations and contribute to the ongoing global amphibian decline <span class="citation" data-cites="carey2003climate">(<a href="#ref-carey2003climate" role="doc-biblioref">Carey and Alexander 2003</a>)</span>. This project will examine how these climatic changes are impacting amphibian populations and identify the key environmental factors contributing to their vulnerability. Understanding these relationships is crucial for developing effective conservation strategies to mitigate the impacts of climate change on amphibian species.</p>
+<p>Research Objective/Question/Hypothesis: The primary objective of this project is to assess the impact of global warming on amphibian vulnerability and overheating. The hypothesis is that higher temperatures and increased frequency of overheating events will worsen amphibian susceptibility to disease, disrupt breeding cycles, and result in population declines. The aim of this project is to test whether temperature increases and increased frequency of overheating directly correlate with changes in amphibian population distribution and count.</p>
+<p>Proposed Methods: This study will integrate climate data (temperature, precipitation) with amphibian population data across various geographical regions. We will use publicly available datasets, such as those from the WorldClim database for climate data (https://www.worldclim.org), and amphibian population monitoring data from sources like AmphibiaWeb (https://amphibiaweb.org). Statistical analysis will include regression modeling to evaluate the relationship between climate variables and amphibian population health, using climate data and population surveys.</p>
+<p>Expected Outcomes: We expect to find a significant correlation between rising temperatures and declining amphibian populations, particularly in regions experiencing increased temperature variability such as near the equator. This expected outcome will highlight the urgent need for climate-responsive conservation strategies to protect vulnerable amphibian species. Additionally, it will highlight specific environmental thresholds beyond which amphibians are most at risk, providing critical information for targeted conservation efforts.</p>
+<p><em>Proposal 2</em></p>
+<p>Title: Impact of thermal stress on coral bleaching patterns of coral reefs from 1998 to 2017</p>
+<p>Justification: Coral reefs are highly susceptible to stress caused by ocean temperatures increasing due to climate change, leading to coral bleaching, which threatens biodiversity and the reefs provide to humans and the rest of the planet. Global warming has increased the frequency and intensity of heatwaves, resulting in widespread coral bleaching events. Previous research has shown that coral reefs in tropical regions, particularly those in mid-latitudes, are more vulnerable to these events <span class="citation" data-cites="hughes2017global">(<a href="#ref-hughes2017global" role="doc-biblioref">Hughes et al. 2017</a>)</span>. Additionally, the onset of coral bleaching has been occurring at higher sea-surface temperatures in recent years, suggesting changes in coral resilience <span class="citation" data-cites="sammarco2009effects">(<a href="#ref-sammarco2009effects" role="doc-biblioref">Sammarco and Strychar 2009</a>)</span>. Understanding the spatial and temporal patterns of coral bleaching is important for developing effective conservation strategies and identifying regions most at risk. This project will analyze coral bleaching data from 1998 to 2017 to assess how thermal stress anomalies have influenced bleaching patterns over time, helping inform future reef management.</p>
+<p>Research Objective/Question/Hypothesis: The objective of this project is to analyze the spatial and temporal patterns of coral bleaching events from 1998 to 2017, focusing on the relationship between thermal stress events (heatwaves) and coral bleaching. The hypothesis is that areas with higher frequency and intensity of thermal stress events will show higher rates of coral bleaching, and that the onset of bleaching in the last decade will occur at higher sea-surface temperatures compared to the previous decade.</p>
+<p>Proposed Methods: This study will use field observations of coral bleaching from 3351 sites across 81 countries from 1998 to 2017, with data obtained from NOAA’s Coral Reef Watch program (https://coralreefwatch.noaa.gov) and the Global Coral Reef Monitoring Network (https://gcrmn.net/). Key variables include sea-surface temperature, frequency and intensity of heatwaves, and coral bleaching reports. The study will focus on coral reefs in tropical and subtropical regions, particularly those between 15–20 degrees north and south of the Equator. Statistical analyses, including regression models and spatial mapping, will be done to assess correlations between temperature anomalies and bleaching frequency. Temporal trends will be analyzed by comparing bleaching thresholds in different decades.</p>
+<p>Expected Outcomes: The project is expected to find a positive correlation between the frequency and intensity of thermal stress anomalies and coral bleaching events. Additionally, the onset of coral bleaching will likely occur at higher temperatures in the recent decade, suggesting that coral populations have either adapted or that less susceptible species have persisted over others. These results will provide valuable insights into coral resilience and guide conservation strategies for coral reef management in a warming world.</p>
+<p><strong>Austin</strong></p>
+<p><em>Proposal 1</em></p>
+<p>Title: Assessing the Impact and Management of Mountain Pine Beetle (MPB) Outbreaks in Colorado Forests</p>
+<p>Justification: The mountain pine beetle (MPB) is a significant pest that affects pine species across North America, including Colorado. Recent outbreaks have led to extensive forest mortality, threatening biodiversity and forest ecosystem services such as carbon storage and water regulation <span class="citation" data-cites="schaedel2017early">(<a href="#ref-schaedel2017early" role="doc-biblioref">Schaedel et al. 2017</a>)</span>. Understanding the dynamics of MPB infestations and the effectiveness of different management strategies is critical for sustaining forest health. Research suggests that climate change may increase these outbreaks, making effective control strategies more urgent <span class="citation" data-cites="bentz1991temperature">(<a href="#ref-bentz1991temperature" role="doc-biblioref">Bentz, Logan, and Amman 1991</a>)</span>. These studies provide the context for our focus on MPB management strategies and forest resilience.</p>
+<p>Research objective/question/hypothesis: This study aims to assess the effectiveness of various management techniques in controlling MPB infestations in Colorado forests. We hypothesize that a combination of thinning and pheromone treatments will reduce MPB-induced mortality more effectively than a single strategy alone.</p>
+<p>Proposed Methods: We will utilize data from Colorado State Forest Service reports, particularly the annual forest health data (https://csfs.colostate.edu), along with climate data from the Colorado Forest Atlas https://coloradoforestatlas.org. Our study will focus on regions affected by MPB outbreaks, spanning a temporal range of the last 10 years. We will compare MPB mortality rates in areas subjected to different management interventions using statistical tests like ANOVA to determine which strategies yield the highest forest survival rates.</p>
+<p>Expected Outcomes: We expect to find that combined management strategies, such as thinning and pheromone treatments, will result in a significant reduction in MPB-induced tree mortality. This outcome will contribute valuable insights into adaptive forest management practices and help mitigate future outbreaks, ensuring the resilience of Colorado’s forests.</p>
+<p><em>Proposal 2</em></p>
+<p>Title: Evaluating the Spread and Control of Zebra Mussels in U.S. Waterways</p>
+<p>Justification: Zebra mussels (Dreissena polymorpha) are an invasive species that cause significant ecological and economic damage in freshwater ecosystems. They alter aquatic habitats by filtering water, which reduces native species’ populations and disrupts food webs <span class="citation" data-cites="haag2008effects">(<a href="#ref-haag2008effects" role="doc-biblioref">Haag and Warren 2008</a>)</span>. Furthermore, zebra mussels clog water infrastructure, leading to costly mitigation efforts. Their spread is influenced by various factors, including water temperature and boat traffic, making control efforts challenging <span class="citation" data-cites="benson2020zebra">(<a href="#ref-benson2020zebra" role="doc-biblioref">Benson et al. 2020</a>)</span>. Understanding these dynamics is crucial for developing effective management strategies. With this research, we aim to analyze the spatial distribution of zebra mussels and test different control methods to reduce their impact.</p>
+<p>Research objective/question/hypothesis: The objective of this study is to assess the distribution of zebra mussels in U.S. water bodies and evaluate the effectiveness of various control measures, including chemical treatments and biological agents. We hypothesize that localized chemical treatments and biological agents will be effective in reducing zebra mussel populations in heavily impacted areas.</p>
+<p>Proposed Methods: We will analyze geospatial data from U.S. Geological Survey datasets, including records on zebra mussel presence and control measures applied data.usgs.gov. Data on water quality and ecological conditions will also be integrated. The study will cover a 5-year period from 2018 to 2023, using statistical tools like regression analysis to evaluate the effectiveness of treatment methods on zebra mussel populations in various U.S. lakes and rivers.</p>
+<p>Expected Outcomes: We expect to find that areas subjected to integrated treatment methods, including biological control agents and chemical applications, will show a significant reduction in zebra mussel populations. This research will inform future management strategies and aid in mitigating the ecological and economic impacts of zebra mussel infestations.</p>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-alan2006widespread" class="csl-entry" role="listitem">
+Alan Pounds, J, Martı́n R Bustamante, Luis A Coloma, Jamie A Consuegra, Michael PL Fogden, Pru N Foster, Enrique La Marca, et al. 2006. <span>“Widespread Amphibian Extinctions from Epidemic Disease Driven by Global Warming.”</span> <em>Nature</em> 439 (7073): 161–67. <a href="https://doi.org/10.1038/nature04246">https://doi.org/10.1038/nature04246</a>.
+</div>
+<div id="ref-benson2020zebra" class="csl-entry" role="listitem">
+Benson, A. J. et al. 2020. <span>“Zebra Mussel Invasions and Their Management.”</span> <em>Journal of Invasive Species Management</em> 12 (2): 102–15. <a href="https://doi.org/10.1016/j.jism.2020.04.002">https://doi.org/10.1016/j.jism.2020.04.002</a>.
+</div>
+<div id="ref-bentz1991temperature" class="csl-entry" role="listitem">
+Bentz, Barbara J, Jesse A Logan, and Gene D Amman. 1991. <span>“Temperature-Dependent Development of the Mountain Pine Beetle (Coleoptera: Scolytidae) and Simulation of Its Phenology.”</span> <em>The Canadian Entomologist</em> 123 (5): 1083–94. <a href="https://doi.org/10.1139/X09-147">https://doi.org/10.1139/X09-147</a>.
+</div>
+<div id="ref-brulle2006environmental" class="csl-entry" role="listitem">
+Brulle, Robert J, and David N Pellow. 2006. <span>“Environmental Justice: Human Health and Environmental Inequalities.”</span> <em>Annual Review of Public Health</em> 27 (1): 103–24. <a href="https://www.annualreviews.org/content/journals/10.1146/annurev.publhealth.27.021405.102124">https://www.annualreviews.org/content/journals/10.1146/annurev.publhealth.27.021405.102124</a>.
+</div>
+<div id="ref-bullard2005quest" class="csl-entry" role="listitem">
+Bullard, Robert Doyle et al. 2005. <em>The Quest for Environmental Justice: Human Rights and the Politics of Pollution</em>. Vol. 19. Sierra Club Books San Francisco. <a href="https://aibd.psc.edu/aekfehsho/15-miss-dannie-considine-1/in7jqx9VZp2G-the-quest-for-environmental-justice-human-rights-9781578051205.pdf">https://aibd.psc.edu/aekfehsho/15-miss-dannie-considine-1/in7jqx9VZp2G-the-quest-for-environmental-justice-human-rights-9781578051205.pdf</a>.
+</div>
+<div id="ref-carey2003climate" class="csl-entry" role="listitem">
+Carey, Cynthia, and Michael A Alexander. 2003. <span>“Climate Change and Amphibian Declines: Is There a Link?”</span> <em>Diversity and Distributions</em> 9 (2): 111–21. <a href="https://doi.org/10.1046/j.1472-4642.2003.00011.x">https://doi.org/10.1046/j.1472-4642.2003.00011.x</a>.
+</div>
+<div id="ref-conceiccao2020human" class="csl-entry" role="listitem">
+Conceição, Pedro. 2020. <span>“Human Development Report 2020-the Next Frontier: Human Development and the Anthropocene.”</span> <em>United Nations Development Programme: Human Development Report</em>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4418010">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4418010</a>.
+</div>
+<div id="ref-dominici2006fine" class="csl-entry" role="listitem">
+Dominici, Francesca, Roger D Peng, Michelle L Bell, Luu Pham, Aidan McDermott, Scott L Zeger, and Jonathan M Samet. 2006. <span>“Fine Particulate Air Pollution and Hospital Admission for Cardiovascular and Respiratory Diseases.”</span> <em>Jama</em> 295 (10): 1127–34. <a href="https://jamanetwork.com/journals/jama/fullarticle/202503#google_vignette">https://jamanetwork.com/journals/jama/fullarticle/202503#google_vignette</a>.
+</div>
+<div id="ref-dondorp2008relationship" class="csl-entry" role="listitem">
+Dondorp, Arjen M, Sue J Lee, Md Abul Faiz, Saroj Mishra, Ric Price, Emiliana Tjitra, Marlar Than, et al. 2008. <span>“The Relationship Between Age and the Manifestations of and Mortality Associated with Severe Malaria.”</span> <em>Clinical Infectious Diseases</em> 47 (2): 151–57. <a href="https://academic.oup.com/cid/article-abstract/47/2/151/356729">https://academic.oup.com/cid/article-abstract/47/2/151/356729</a>.
+</div>
+<div id="ref-gleick2012world" class="csl-entry" role="listitem">
+Gleick, Peter H, Lucy Allen, Juliet Christian-Smith, Michael J Cohen, Heather Cooley, Matthew Heberger, Jason Morrison, Meena Palaniappan, and Paul Schulte. 2012. <em>The World’s Water Volume 7: The Biennial Report on Freshwater Resources</em>. Island press. <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=5Y8tmugb-EoC&amp;oi=fnd&amp;pg=PR5&amp;dq=The+World%27s+Water+Volume+9:+The+Biennial+Report+on+Freshwater+Resources.&amp;ots=o5MySaHY4I&amp;sig=U08q6tYo85p_XvRY0FYTH0GaM1w#v=onepage&amp;q=The%20World's%20Water%20Volume%209%3A%20The%20Biennial%20Report%20on%20Freshwater%20Resources.&amp;f=false">https://books.google.com/books?hl=en&amp;lr=&amp;id=5Y8tmugb-EoC&amp;oi=fnd&amp;pg=PR5&amp;dq=The+World%27s+Water+Volume+9:+The+Biennial+Report+on+Freshwater+Resources.&amp;ots=o5MySaHY4I&amp;sig=U08q6tYo85p_XvRY0FYTH0GaM1w#v=onepage&amp;q=The%20World's%20Water%20Volume%209%3A%20The%20Biennial%20Report%20on%20Freshwater%20Resources.&amp;f=false</a>.
+</div>
+<div id="ref-haag2008effects" class="csl-entry" role="listitem">
+Haag, W. R., and M. L. Warren. 2008. <span>“Effects of Zebra Mussels on Freshwater Mussel Populations in North America.”</span> <em>Hydrobiologia</em> 606 (1): 169–77. <a href="https://doi.org/10.1007/s10750-008-9373-x">https://doi.org/10.1007/s10750-008-9373-x</a>.
+</div>
+<div id="ref-hughes2017global" class="csl-entry" role="listitem">
+Hughes, Terry P, James T Kerry, Mariana Álvarez-Noriega, Jorge G Álvarez-Romero, Kristen D Anderson, Andrew H Baird, Russell C Babcock, et al. 2017. <span>“Global Warming and Recurrent Mass Bleaching of Corals.”</span> <em>Nature</em> 543 (7645): 373–77. <a href="https://doi.org/10.1038/nature21707">https://doi.org/10.1038/nature21707</a>.
+</div>
+<div id="ref-mace2021malaria" class="csl-entry" role="listitem">
+Mace, Kimberly E. 2021. <span>“Malaria Surveillance—United States, 2017.”</span> <em>MMWR. Surveillance Summaries</em> 70. <a href="https://www.cdc.gov/mmwr/volumes/70/ss/ss7002a1.htm">https://www.cdc.gov/mmwr/volumes/70/ss/ss7002a1.htm</a>.
+</div>
+<div id="ref-pope2006health" class="csl-entry" role="listitem">
+Pope III, C Arden, and Douglas W Dockery. 2006. <span>“Health Effects of Fine Particulate Air Pollution: Lines That Connect.”</span> <em>Journal of the Air &amp; Waste Management Association</em> 56 (6): 709–42. <a href="https://doi.org/10.1080/10473289.2006.10464485">https://doi.org/10.1080/10473289.2006.10464485</a>.
+</div>
+<div id="ref-sammarco2009effects" class="csl-entry" role="listitem">
+Sammarco, Paul W, and Kevin B Strychar. 2009. <span>“Effects of Climate Change/Global Warming on Coral Reefs: Adaptation/Exaptation in Corals, Evolution in Zooxanthellae, and Biogeographic Shifts.”</span> <em>Environmental Bioindicators</em> 4 (1): 9–45. <a href="https://doi.org/10.1080/15555270902905377">https://doi.org/10.1080/15555270902905377</a>.
+</div>
+<div id="ref-schaedel2017early" class="csl-entry" role="listitem">
+Schaedel, Michael S, Andrew J Larson, David LR Affleck, R Travis Belote, John M Goodburn, and Deborah S Page-Dumroese. 2017. <span>“Forest Health Implications of Mountain Pine Beetle Outbreaks.”</span> <em>Forest Ecology and Management</em> 389: 187–98. <a href="https://doi.org/10.1016/j.foreco.2016.12.018">https://doi.org/10.1016/j.foreco.2016.12.018</a>.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
