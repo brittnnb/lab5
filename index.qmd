@@ -28,7 +28,7 @@ Final Project Document:
 
 Title: Malaria Cases by Age in the United States Between 2010-2020
 
-Justification: Quantitative analysis of malaria cases by age is critical to look into further because there isn’t enough research to see if age is an independent factor that contributes to higher cases (Dondrop, A., et. al, 2008). However, the risks and symptoms are worse in older individuals. With a better understanding of the distribution of age and cases of malaria in the United States, we can prioritize protecting those who need it most. Malaria has been seen to be slowly increasing in the United States since the 1970s and hit its peak in 2016 with 2,078 confirmed cases and was passed again in 2017 (Mace, K., 2021). In this analysis, we would be able to determine if the distribution of age and malaria cases is correlated and if mosquitos prefer to infect those of a certain age. 
+Justification: Quantitative analysis of malaria cases by age is critical to look into further because there isn’t enough research to see if age is an independent factor that contributes to higher cases [@dondorp2008relationship]. However, the risks and symptoms are worse in older individuals. With a better understanding of the distribution of age and cases of malaria in the United States, we can prioritize protecting those who need it most. Malaria has been seen to be slowly increasing in the United States since the 1970s and hit its peak in 2016 with 2,078 confirmed cases and was passed again in 2017 [@mace2021malaria]. In this analysis, we would be able to determine if the distribution of age and malaria cases is correlated and if mosquitos prefer to infect those of a certain age. 
 
 Research objective/hypothesis: Adults over the age of 50 have a higher incidence rate of malaria in the United States compared to individuals between the ages of 10-18. 
 
@@ -36,16 +36,12 @@ Proposed Methods: To test this hypothesis we will conduct an observational study
 
 Expected Outcomes: I think that the hypothesis will prove to be true because older people are more prone to mosquito incidents, and this is important to determine because it will let us know that they need to be monitored more and protect themselves more due to them being more vulnerable. 
 
-Citation: 
-@dondorp2008relationship
-@mace2021malaria
-
 
 *Proposal 2*
 
 Title: Air Pollution and its Impact on Hospitalization
 
-Justification: When looking at high levels of air pollution in highly populated/congested areas we often see more hospitalization of people within these regions because they are ingesting particles that can’t pass through their alveoli within the lungs. There have been many cases that have linked severe respiratory and cardiovascular effects, which makes public health a major concern. It is shown in one study that the amount of prolonged exposure to high particulate levels causes increased hospitalizations due to asthma, COPD, and pneumonia (Dominci et al., 2006). The elderly, children and individuals with preexisting respiratory issues are more likely to experience hospitalization in Urban areas because of high pollution (Pope & Dockery, 2006). This analysis will be able to inform policy decisions like implementing stricter air quality regulations. 
+Justification: When looking at high levels of air pollution in highly populated/congested areas we often see more hospitalization of people within these regions because they are ingesting particles that can’t pass through their alveoli within the lungs. There have been many cases that have linked severe respiratory and cardiovascular effects, which makes public health a major concern. It is shown in one study that the amount of prolonged exposure to high particulate levels causes increased hospitalizations due to asthma, COPD, and pneumonia [@dominici2006fine]. The elderly, children and individuals with preexisting respiratory issues are more likely to experience hospitalization in Urban areas because of high pollution [@pope2006health]. This analysis will be able to inform policy decisions like implementing stricter air quality regulations. 
 
 Research objectives/hypothesis: Higher levels of particulate matter in the air in major U.S. urban areas are significantly associated with an increase in respiratory-related hospital admissions. 
 
@@ -53,9 +49,6 @@ Proposed Methods: The analysis will analyze the relationship between particulate
 
 Expected Outcomes: We should see a positive correlation between increased hospital admissions and a higher amount of air particulate matter in urban areas within the untied States. 
  
-Citation:
-@dominici2006fine
-@pope2006health
 
 
 **Brittany**
@@ -66,15 +59,15 @@ Title:   "Navigating the Water Crisis: How Population Growth Exacerbates Water S
 
 Justification:  This is an analysis that could provide valuable insights into the interconnectedness of population growth, water supply, and broader socioeconomic and environmental outcomes. It would identify the trends globally regarding which countries' water supplies are being affected the most by the negative impacts of overpopulation. This analysis could also then be used in comparison with other metrics such as GDP to further explore what the quality of life may be for those living within these areas heavily affected by the global water crisis. Additionally, by discovering what areas are most affected, further analysis could be performed to decipher what areas will most likely be affected by factors such as food scarcity linked to water scarcity caused by the negative effects of climate change. Water scarcity is increasingly becoming a critical issue, and understanding how population growth affects water availability is key to addressing potential future challenges, especially in light of climate change and increasing global demand.
 
-Research Objective/ Hypothesis: The aim is to examine the relationship between population growth and the negative impact it has on the global water supply, and to explore how these effects are compounded by other factors such as GDP and climate change.How does population growth impact global water supply, and what are the subsequent effects on food security, economic development, and quality of life in water-stressed regions? As the global population grows, areas experiencing rapid population increases will face heightened water scarcity, leading to negative impacts on food security, economic growth, and the quality of life, especially in developing regions. Furthermore, the effects of climate change will exacerbate these challenges, creating a feedback loop that makes water-stressed regions more vulnerable to socio-economic instability (Conceição et al 2020).
+Research Objective/ Hypothesis: The aim is to examine the relationship between population growth and the negative impact it has on the global water supply, and to explore how these effects are compounded by other factors such as GDP and climate change.How does population growth impact global water supply, and what are the subsequent effects on food security, economic development, and quality of life in water-stressed regions? As the global population grows, areas experiencing rapid population increases will face heightened water scarcity, leading to negative impacts on food security, economic growth, and the quality of life, especially in developing regions. Furthermore, the effects of climate change will exacerbate these challenges, creating a feedback loop that makes water-stressed regions more vulnerable to socio-economic instability [@conceiccao2020human].
 
 Proposed Methods: The methodology will include data analysis, case studies, and modeling to understand the relationships between population growth, water supply, and their impacts on food security and quality of life. Global population data would be sourced from the UN database https://data.un.org/. Water supply and usage data would be gathered from either WRI or FAO. GDP and quality of life indicators would be sourced from UNDP and WHO. Finally, climate change impact data would be gathered from IPCC. A linear regression model may be the best statistical analysis suited for this type of analysis and could provide a needed visualization of the data 
 
 Expected Outcomes: The expected outcomes of this research will provide valuable insights into the relationship between population growth, water scarcity, and the socio-economic outcomes in water-stressed regions. The findings will help in identifying regions most at risk and in proposing effective solutions to mitigate the impacts of water scarcity, ensuring a more sustainable future for both people and the planet.
 
 Citations:
-@conceiccao2020human
-@gleick2012world
+[@conceiccao2020human]
+[@gleick2012world]
 
 
 *Proposal 2*
@@ -90,8 +83,8 @@ Proposed Methods: The methodology will include data analysis, case studies, and 
 Expected Outcomes: By utilizing EPA TRI data alongside GDP data, this analysis will uncover the links between pollution and economic status, shedding light on which communities face the greatest environmental burdens. The results will inform environmental justice discussions, helping to guide targeted policies and interventions that protect vulnerable communities from the adverse effects of pollution. I do suspect there will be a correlation between GDP and the data explored from the EPA. 
 
 Citations: 
-@bullard2005quest
-@brulle2006environmental
+[@bullard2005quest]
+[@brulle2006environmental]
 
 
 **Louisa**
@@ -101,7 +94,7 @@ Citations:
 Title: Impact of Global Warming on Amphibian Vulnerability: A Study of Ecological Shifts and Conservation Priorities
 
 Justification:
-Amphibians great indicator species and are highly sensitive to environmental changes, particularly those driven by climate change. Due to their permeable skin and reliance on both aquatic and terrestrial environments, amphibians are increasingly vulnerable to warming temperatures. Research suggests that global warming is causing significant shifts in the distribution and behavior of amphibian species, increasing their susceptibility to disease and altering their breeding patterns (Pounds et al., 2006). The loss of suitable habitats, along with rising temperatures, can disrupt amphibian populations and contribute to the ongoing global amphibian decline (Carey & Alexander, 2003). This project will examine how these climatic changes are impacting amphibian populations and identify the key environmental factors contributing to their vulnerability. Understanding these relationships is crucial for developing effective conservation strategies to mitigate the impacts of climate change on amphibian species.
+Amphibians great indicator species and are highly sensitive to environmental changes, particularly those driven by climate change. Due to their permeable skin and reliance on both aquatic and terrestrial environments, amphibians are increasingly vulnerable to warming temperatures. Research suggests that global warming is causing significant shifts in the distribution and behavior of amphibian species, increasing their susceptibility to disease and altering their breeding patterns [@alan2006widespread]. The loss of suitable habitats, along with rising temperatures, can disrupt amphibian populations and contribute to the ongoing global amphibian decline [@carey2003climate]. This project will examine how these climatic changes are impacting amphibian populations and identify the key environmental factors contributing to their vulnerability. Understanding these relationships is crucial for developing effective conservation strategies to mitigate the impacts of climate change on amphibian species.
 
 Research Objective/Question/Hypothesis:
 The primary objective of this project is to assess the impact of global warming on amphibian vulnerability and overheating. The hypothesis is that higher temperatures and increased frequency of overheating events will worsen amphibian susceptibility to disease, disrupt breeding cycles, and result in population declines. The aim of this project is to test whether temperature increases and increased frequency of overheating directly correlate with changes in amphibian population distribution and count.
@@ -112,17 +105,13 @@ This study will integrate climate data (temperature, precipitation) with amphibi
 Expected Outcomes:
 We expect to find a significant correlation between rising temperatures and declining amphibian populations, particularly in regions experiencing increased temperature variability such as near the equator. This expected outcome will highlight the urgent need for climate-responsive conservation strategies to protect vulnerable amphibian species. Additionally, it will highlight specific environmental thresholds beyond which amphibians are most at risk, providing critical information for targeted conservation efforts.
 
-Citations: 
-@alan2006widespread
-@carey2003climate
-
 
 *Proposal 2*
 
 Title: Impact of thermal stress on coral bleaching patterns of coral reefs from 1998 to 2017
 
 Justification:
-Coral reefs are highly susceptible to stress caused by ocean temperatures increasing due to climate change, leading to coral bleaching, which threatens biodiversity and the reefs provide to humans and the rest of the planet. Global warming has increased the frequency and intensity of heatwaves, resulting in widespread coral bleaching events. Previous research has shown that coral reefs in tropical regions, particularly those in mid-latitudes, are more vulnerable to these events (Hughes et al., 2017). Additionally, the onset of coral bleaching has been occurring at higher sea-surface temperatures in recent years, suggesting changes in coral resilience (Sammarco & Strychar, 2009). Understanding the spatial and temporal patterns of coral bleaching is important for developing effective conservation strategies and identifying regions most at risk. This project will analyze coral bleaching data from 1998 to 2017 to assess how thermal stress anomalies have influenced bleaching patterns over time, helping inform future reef management.
+Coral reefs are highly susceptible to stress caused by ocean temperatures increasing due to climate change, leading to coral bleaching, which threatens biodiversity and the reefs provide to humans and the rest of the planet. Global warming has increased the frequency and intensity of heatwaves, resulting in widespread coral bleaching events. Previous research has shown that coral reefs in tropical regions, particularly those in mid-latitudes, are more vulnerable to these events [@hughes2017global]. Additionally, the onset of coral bleaching has been occurring at higher sea-surface temperatures in recent years, suggesting changes in coral resilience [@sammarco2009effects]. Understanding the spatial and temporal patterns of coral bleaching is important for developing effective conservation strategies and identifying regions most at risk. This project will analyze coral bleaching data from 1998 to 2017 to assess how thermal stress anomalies have influenced bleaching patterns over time, helping inform future reef management.
 
 Research Objective/Question/Hypothesis:
 The objective of this project is to analyze the spatial and temporal patterns of coral bleaching events from 1998 to 2017, focusing on the relationship between thermal stress events (heatwaves) and coral bleaching. The hypothesis is that areas with higher frequency and intensity of thermal stress events will show higher rates of coral bleaching, and that the onset of bleaching in the last decade will occur at higher sea-surface temperatures compared to the previous decade.
@@ -133,9 +122,6 @@ This study will use field observations of coral bleaching from 3351 sites across
 Expected Outcomes:
 The project is expected to find a positive correlation between the frequency and intensity of thermal stress anomalies and coral bleaching events. Additionally, the onset of coral bleaching will likely occur at higher temperatures in the recent decade, suggesting that coral populations have either adapted or that less susceptible species have persisted over others. These results will provide valuable insights into coral resilience and guide conservation strategies for coral reef management in a warming world.
 
-Citations: 
-@hughes2017global
-@sammarco2009effects
 
 
 **Austin**
@@ -144,7 +130,7 @@ Citations:
 
 Title: Assessing the Impact and Management of Mountain Pine Beetle (MPB) Outbreaks in Colorado Forests
 
-Justification: The mountain pine beetle (MPB) is a significant pest that affects pine species across North America, including Colorado. Recent outbreaks have led to extensive forest mortality, threatening biodiversity and forest ecosystem services such as carbon storage and water regulation (Scqhwantes et al., 2017). Understanding the dynamics of MPB infestations and the effectiveness of different management strategies is critical for sustaining forest health. Research suggests that climate change may increase these outbreaks, making effective control strategies more urgent (Bentz et al., 2010). These studies provide the context for our focus on MPB management strategies and forest resilience.
+Justification: The mountain pine beetle (MPB) is a significant pest that affects pine species across North America, including Colorado. Recent outbreaks have led to extensive forest mortality, threatening biodiversity and forest ecosystem services such as carbon storage and water regulation [@schaedel2017early]. Understanding the dynamics of MPB infestations and the effectiveness of different management strategies is critical for sustaining forest health. Research suggests that climate change may increase these outbreaks, making effective control strategies more urgent [@bentz1991temperature]. These studies provide the context for our focus on MPB management strategies and forest resilience.
 
 Research objective/question/hypothesis:  This study aims to assess the effectiveness of various management techniques in controlling MPB infestations in Colorado forests. We hypothesize that a combination of thinning and pheromone treatments will reduce MPB-induced mortality more effectively than a single strategy alone.
 
@@ -152,16 +138,13 @@ Proposed Methods: We will utilize data from Colorado State Forest Service report
 
 Expected Outcomes: We expect to find that combined management strategies, such as thinning and pheromone treatments, will result in a significant reduction in MPB-induced tree mortality. This outcome will contribute valuable insights into adaptive forest management practices and help mitigate future outbreaks, ensuring the resilience of Colorado's forests.
 
-Citations: 
-@bentz1991temperature
-@schaedel2017early
 
 
 *Proposal 2*
 
 Title: Evaluating the Spread and Control of Zebra Mussels in U.S. Waterways
 
-Justification: Zebra mussels (Dreissena polymorpha) are an invasive species that cause significant ecological and economic damage in freshwater ecosystems. They alter aquatic habitats by filtering water, which reduces native species' populations and disrupts food webs (Haag & Warren, 2008). Furthermore, zebra mussels clog water infrastructure, leading to costly mitigation efforts. Their spread is influenced by various factors, including water temperature and boat traffic, making control efforts challenging (Benson et al., 2020). Understanding these dynamics is crucial for developing effective management strategies. With this research, we aim to analyze the spatial distribution of zebra mussels and test different control methods to reduce their impact.
+Justification: Zebra mussels (Dreissena polymorpha) are an invasive species that cause significant ecological and economic damage in freshwater ecosystems. They alter aquatic habitats by filtering water, which reduces native species' populations and disrupts food webs [@haag2008effects]. Furthermore, zebra mussels clog water infrastructure, leading to costly mitigation efforts. Their spread is influenced by various factors, including water temperature and boat traffic, making control efforts challenging [@benson2020zebra]. Understanding these dynamics is crucial for developing effective management strategies. With this research, we aim to analyze the spatial distribution of zebra mussels and test different control methods to reduce their impact.
 
 Research objective/question/hypothesis: The objective of this study is to assess the distribution of zebra mussels in U.S. water bodies and evaluate the effectiveness of various control measures, including chemical treatments and biological agents. We hypothesize that localized chemical treatments and biological agents will be effective in reducing zebra mussel populations in heavily impacted areas.
 
@@ -169,7 +152,5 @@ Proposed Methods: We will analyze geospatial data from U.S. Geological Survey da
 
 Expected Outcomes: We expect to find that areas subjected to integrated treatment methods, including biological control agents and chemical applications, will show a significant reduction in zebra mussel populations. This research will inform future management strategies and aid in mitigating the ecological and economic impacts of zebra mussel infestations.
 
-Citations: 
-@benson2020zebra
-@haag2008effects
+
 
